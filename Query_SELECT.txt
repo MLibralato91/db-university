@@ -19,6 +19,7 @@ ____________________________________________________________
 SELECT `name`, `surname`, `date_of_birth`
 FROM `students`
 WHERE YEAR(`date_of_birth`) <= '1993';
+// WHERE DATEDIFF(NOW(), `date_of_birth`) / 365 > 30;
 
 ____________________________________________________________
 
@@ -51,14 +52,14 @@ ____________________________________________________________
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
-SELECT COUNT(*)
+SELECT COUNT(*) AS `numero_dipartipenti`
 FROM `departments`;
 
 ____________________________________________________________
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
-SELECT `name`, `surname`, `phone`
+SELECT COUNT(*) AS `numero_insegnanti`
 FROM `teachers`
 WHERE `phone` <> 'NULL'
 
