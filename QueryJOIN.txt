@@ -69,6 +69,9 @@ JOIN `teachers`
 ON `course_teacher`.`teacher_id` = `teachers`.`id`
 WHERE `departments`.`name` = 'Dipartimento di Matematica';
 _________________________________________________________________________________________
+
 7. BONUS: Selezionare per ogni studente quanti tentativi d’esame ha sostenuto per
-superare ciascuno dei suoi esam
+superare ciascuno dei suoi esami
+
+
 _________________________________________________________________________________________
